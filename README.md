@@ -72,6 +72,11 @@ Commands:
 - increasing number of measurements make it harder but still possible to receive violations; so even such dynamic S is a legal mathematical expectation of current experiment, despite the fact that high order expectation for S itself seems to be 2.
 
 
+**Theoretical explanation**:
+
+It seems that we have non-standrard mathematical expectation here. So expectation of S calculated by experiments (both real and simulated) is wrong. If we believe in law of large numbers - it should be S = 2.0 with error 2*(sqrt(2) - 1) for such distributions.
+
+
 Pros:
 
 - it's simpler than "spooky correlation" and fine with no-communication theorem
