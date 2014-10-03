@@ -1,8 +1,9 @@
 #Bell's game
+\<please note that i'm not explaining theory here - only results, you can find algorithm in sources\>
 
 This is a simulation of SHCH bell's inequality violation, assuming:
 
-- local realism, determinism - entangled particles are sharing some hidden parameters (see /src/main/scala/Model.scala for explanation)
+- local realism, determinism - entangled particles are sharing some hidden parameters (see /src/main/scala/Model.scala for algorithm)
 - simultaneity is just a special case - it's possible to violate SHCH using sequence numbers instead of timetags
 - particle knows about measurement
 - optional1: particle knows about her seqNumber or timeTag - it allows to build strategy in which number of measurements does not affect much measured S (number of switches does).
