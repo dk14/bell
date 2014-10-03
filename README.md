@@ -7,7 +7,7 @@ This is a simulation of CHSH bell's inequality violation, assuming:
 - simultaneity is just a special case - it's possible to violate SHCH using sequence numbers instead of timetags
 - particle knows about measurement
 
-It may not correlate with practical experiments, but at least shows that it's logically possible to set up an experiment which violate SHCH with local reality assumption and without any communication between participants or particles. So, such kind of models may lead to appropriate hidden parameters model (maybe even with truly random hidden parameters).  
+It may not correlate with practical experiments, but at least shows that it's logically possible to set up an experiment which violate SHCH with local reality assumption and without any communication between participants or particles.
 
 Note, that there is also no communication between concrete particles of same detector.
 
