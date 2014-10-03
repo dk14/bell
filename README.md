@@ -1,5 +1,5 @@
 #Bell's game
-\<please note that i'm not explaining theory here - only results, you can find out algorithm from the sources\>
+\<please note that i'm not explaining theory here - only results, you can find out algorithm from sources\>
 
 This is a simulation of SHCH bell's inequality violation, assuming:
 
@@ -13,7 +13,16 @@ It may not correlate with practical experiments, but at least shows that it's lo
 
 Note, that there is also no communication between concrete particles of same detector.
 
-How to use:
+# How to use
+
+Actions:
+
+1. Generating e.txt file with hidden parameters (you can make it read-only to ensure there is no tricks)
+2. Measuring A statistic using e.txt -> and saving to A.log
+3. Measuring B statistic using e.txt -> and saving to B.log (may be done on another machine)
+4. Analyzing results from A.log and B.log
+
+Commands:
 
     # please, install Git and Java 8 before, 
     # MacOS, Linux or Git Cygwin Terminal is also preferred
