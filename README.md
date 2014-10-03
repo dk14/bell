@@ -1,5 +1,4 @@
 #Bell's game
-\<please note that i'm not explaining theory here - only results, you can find out algorithm from the sources\>
 
 This is a simulation of CHSH bell's inequality violation, assuming:
 
