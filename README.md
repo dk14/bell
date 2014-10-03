@@ -1,5 +1,5 @@
 #Bell's game
-\<please note that i'm not explaining theory here - only results, you can find algorithm in sources\>
+\<please note that i'm not explaining theory here - only results, you can find out algorithm from sources\>
 
 This is a simulation of SHCH bell's inequality violation, assuming:
 
