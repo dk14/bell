@@ -61,8 +61,9 @@ How it works:
       special and (not hiddenParameter1) | not special and hiddenParameter1,
       special = isB' and hiddenParameter2
  where 
-       isB' - true only if B' (67.5°) is measuring now
-       hiddenParameter1 - random (true or false) correlated with entangled particle
+ 
+       isB' - true only if B' (67.5°) is measuring now,
+       hiddenParameter1 - random (true or false) correlated with entangled particle,
        hiddenParameter2 - single random (true or false)
        
        
