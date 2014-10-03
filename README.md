@@ -58,8 +58,9 @@ How it works:
 
  The measured state of particle is calculated using boolean formula:
  
-      special and (not hiddenParameter1) | not special and hiddenParameter1,
-      special = isB' and hiddenParameter2
+     out = special and (not hiddenParameter1) or (not special) and hiddenParameter1,
+     special = isB' and hiddenParameter2
+ 
  where 
  
        isB' - true only if B' (67.5°) is measuring now,
