@@ -67,7 +67,7 @@ Commands:
        
        
 
-Results:
+## Results:
 
 - usually received S about 1.5..2.5 for randomly generated settings and statistically significant number of measurements (1000 for each S); so it violates inequality sometimes, which is enough for "always <= 2" formulation
 - increasing number of measurements make it harder but still possible to receive violations; so even such dynamic S is a legal mathematical expectation of current experiment, despite the fact that high order expectation for S itself seems to be 2.
