@@ -95,4 +95,6 @@ Links:
 - http://en.wikipedia.org/wiki/Loopholes_in_Bell_test_experiments
 - http://plato.stanford.edu/entries/bell-theorem/
 - http://qrng.anu.edu.au/ - randomizer
+- 
+Please refer to this page to the author if you're publishing research based on that! :-)
 
