@@ -1,5 +1,5 @@
 #Bell's game
-\<please note that i'm not explaining theory here - only results, you can find out algorithm from sources\>
+\<please note that i'm not explaining theory here - only results, you can find out algorithm from the sources\>
 
 This is a simulation of SHCH bell's inequality violation, assuming:
 
@@ -53,6 +53,19 @@ Commands:
     
     # you can also simulate man-in-the-middle by using different entanglement file for measureB (cause measuring leads to corruption)
     # statistic will be much different and always <= 2 
+
+How it works:
+
+ The measured state of particle is calculated using boolean formula:
+ 
+      special and (not hiddenParameter1) | not special and hiddenParameter1,
+      special = isB' and hiddenParameter2
+ where 
+       isB' - true only if B' (67.5°) is measuring now
+       hiddenParameter1 - random (true or false) correlated with entangled particle
+       hiddenParameter2 - single random (true or false)
+       
+       
 
 Results:
 
