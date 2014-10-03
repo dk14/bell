@@ -96,5 +96,7 @@ Links:
 - http://plato.stanford.edu/entries/bell-theorem/
 - http://qrng.anu.edu.au/ - randomizer
 - 
+
+ 
 Please refer to this page to the author if you're publishing research based on that! :-)
 
