@@ -98,5 +98,5 @@ Links:
 - 
 
  
-Please refer to this page to the author if you're publishing research based on that! :-)
+Please refer to this page or to the author if you're publishing research based on that! :-)
 
