@@ -6,8 +6,6 @@ This is a simulation of SHCH bell's inequality violation, assuming:
 - local realism, determinism - entangled particles are sharing some hidden parameters (see /src/main/scala/Model.scala for algorithm)
 - simultaneity is just a special case - it's possible to violate SHCH using sequence numbers instead of timetags
 - particle knows about measurement
-- optional1: particle knows about her seqNumber or timeTag - it allows to build strategy in which number of measurements does not affect much measured S (number of switches does).
-- optional2 (not simulated): entanglement with detector - if particle knows which detector settings were used before (or even after) - it can build more effective strategy than simulated here. If choice of setting correlates with hidden parameter then it's possible to built strategy which always will give us S > 2 or even S = 4; it will be still local, (super?)deterministic and non-communicate.
 
 It may not correlate with practical experiments, but at least shows that it's logically possible to set up an experiment which violate SHCH with local reality assumption and without any communication between participants or particles. So, such kind of models may lead to appropriate hidden parameters model (maybe even with truly random hidden parameters).  
 
@@ -72,14 +70,13 @@ How it works:
 Results:
 
 - usually received S about 1.5..2.5 for randomly generated settings and statistically significant number of measurements (1000 for each S); so it violates inequality sometimes, which is enough for "always <= 2" formulation
-- if optional1 assumption is true then increasing number of measurements does not affect measured S range
-- if not: S still may be > 2, but this makes it harder to receive big violations; so even such dynamic S is a legal mathematical expectation of current experiment, despite the fact that high order expectation for S itself seems to be 2.
-- increasing count of setting switches will affect S by making it harder (but still possible) to reach value more than 2 
+- increasing number of measurements make it harder but still possible to receive violations; so even such dynamic S is a legal mathematical expectation of current experiment, despite the fact that high order expectation for S itself seems to be 2.
+
 
 Pros:
 
 - it's simpler than "spooky correlation" and fine with no-communication theorem
-- it may solve relativity of simultaneity paradox and allow deterministic hidden parameters, so should be fine with special relativity theory
+- it solves relativity of simultaneity paradox and allow deterministic hidden parameters, so should be fine with special relativity theory
 - it seems to be fine with existing quantum predictions (S < 2*sqrt(2), sometimes up to 2.6)
 
 Cons:
