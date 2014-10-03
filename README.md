@@ -1,7 +1,7 @@
 #Bell's game
 \<please note that i'm not explaining theory here - only results, you can find out algorithm from the sources\>
 
-This is a simulation of SHCH bell's inequality violation, assuming:
+This is a simulation of CHSH bell's inequality violation, assuming:
 
 - local realism, determinism - entangled particles are sharing some hidden parameters (see /src/main/scala/Model.scala for algorithm)
 - simultaneity is just a special case - it's possible to violate SHCH using sequence numbers instead of timetags
