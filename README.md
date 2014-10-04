@@ -15,17 +15,17 @@ Note, that there is also no communication between concrete particles of same det
 
  The measured state of single particle is calculated using boolean formula:
  
-     (b' and hiddenSingle) XOR hiddenCorrelated
+     (b' and x) XOR y
  
  where 
  
        b' - true only if b' (67.5°) is measuring now,
-       hiddenCorrelated - random boolean correlated with entangled particle's hiddenCorrelated at the entanglement moment,
-       hiddenSingle - single random boolean; it may be "50%" or another distribution
-       
-HiddenParameter2  may be random, based on (seqNumber div someN) to locally and implicitly correlate it for particles on same detector (particles with near seqNumbers will have same hiddenParameter2 without any communication) - it will improve violation: for someN = 100 received 2.13 after 5 experiments with 100000 measurements in 1000 subexperiments (see A.log, B.log). 
+       x - random boolean correlated with entangled particle's x at the entanglement moment,
+       y - single random boolean; it may be "50%" or another distribution
 
-So, this formula is enough to build distributions which will violate SHCH without real-time communication.
+       
+y  is simulated as random, based on (seqNumber div someN) to locally and implicitly correlate it for particles on same detector (particles with near seqNumbers will have same hiddenParameter2 without any communication) - it will improve violation: for someN = 100 received 2.13 after 5 experiments with 100000 measurements in 1000 subexperiments (see A.log, B.log). 
+
        
 **Theoretical explanation**:
 
