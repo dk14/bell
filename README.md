@@ -15,14 +15,14 @@ Note, that there is also no communication between concrete particles of same det
 
  The measured state of single particle is calculated using boolean formula:
  
-     (b' and x) XOR y
+     x = (b' and z) XOR y
  
  where 
  
        b' - true only if b' (67.5°) is measuring now,
-       x - random boolean correlated with entangled particle's x at the entanglement moment,
-       y - single random boolean; it may be "50%" or another distribution
-
+       y - random boolean correlated with entangled particle's y at the entanglement moment,
+       z - single random boolean; it may be "50%" or another distribution
+       x - result of measurement
        
 y  is simulated as random, based on (seqNumber div someN) to locally and implicitly correlate it for particles on same detector (particles with near seqNumbers will have same hiddenParameter2 without any communication) - it will improve violation: for someN = 100 received 2.13 after 5 experiments with 100000 measurements in 1000 subexperiments (see A.log, B.log). 
 
