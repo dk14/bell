@@ -63,5 +63,3 @@ Links:
 - http://qrng.anu.edu.au/ - randomizer
 
  
-refer to this publication or to the author if you're publishing research based on that! :-)
-
