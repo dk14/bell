@@ -2,7 +2,7 @@
 
 This is a simulation of CHSH bell's inequality violation, assuming:
 
-- local realism, determinism - entangled particles are sharing some hidden parameters (see /src/main/scala/Model.scala for algorithm)
+- local realism, determinism - entangled particles are sharing some hidden parameters
 - simultaneity is just a special case - it's possible to violate CHSH using sequence numbers instead of timetags
 - particle knows about measurement
 
