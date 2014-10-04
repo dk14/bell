@@ -20,7 +20,7 @@ Note, that there is also no communication between concrete particles of same det
  where 
  
        isB' - true only if B' (67.5°) is measuring now,
-       hiddenParameter1 - random (true or false) correlated with entangled particle,
+       hiddenParameter1 - random (true or false) correlated with entangled particle (at the entanglement moment!),
        hiddenParameter2 - single random (true or false)
        
        
