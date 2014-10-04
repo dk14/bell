@@ -24,7 +24,6 @@ Note, that there is also no communication between concrete particles of same det
        hiddenParameter2 - single random (true or false)
        
        
-
 ## How to use
 
 Actions:
@@ -102,5 +101,5 @@ Links:
 - http://qrng.anu.edu.au/ - randomizer
 
  
-Please refer to this page or to the author if you're publishing research based on that! :-)
+refer to this publication or to the author if you're publishing research based on that! :-)
 
