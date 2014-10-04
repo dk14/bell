@@ -20,10 +20,6 @@ object Model {
    * @param e - entanglement
    */
   case class Detector(name: String = "", isLeft: Boolean = true)(implicit e: Entanglement) {
-    def yes = e.g //returns random correlated with hidden parameter
-    def no = e.g.map(!_) //returns random anti-correlated with hidden parameter
-
-    def strategy(seqNumber: Int) = strategyRandom(seqNumber / 100) //it may also be just gen.nextBoolean
 
     /**
      * measure particle state
@@ -31,8 +27,7 @@ object Model {
      * @param master - detector setting: a or a', b or b'
      * @return result of measurement (may be true or false), which will participate in S calculation
      */
-    def measure(implicit seqNumber: Int, master: Boolean = false) =
-      if (strategy(seqNumber) && !isLeft && !master) no(seqNumber) else yes(seqNumber) //this is how it works
+    def measure(implicit seqNumber: Int, master: Boolean = false) = e.g(seqNumber) && !isLeft && !master
 
   }
 
