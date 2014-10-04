@@ -12,7 +12,7 @@ Note, that there is also no communication between concrete particles of same det
 
 ## How it works:
 
- The measured state of particle is calculated using boolean formula:
+ The measured state of single particle is calculated using boolean formula:
  
      out = special and (not hiddenParameter1) or (not special) and hiddenParameter1,
      special = isB' and hiddenParameter2
@@ -21,8 +21,11 @@ Note, that there is also no communication between concrete particles of same det
  
        isB' - true only if B' (67.5°) is measuring now,
        hiddenParameter1 - random (true or false) correlated with entangled particle (at the entanglement moment!),
-       hiddenParameter2 - single random (true or false)
+       hiddenParameter2 - single random (true or false), 
        
+HiddenParameter2  may be random, based on (seqNumber div someN) to locally and implicitly correlate it for particles on same detector (particles with near seqNumbers will have same hiddenParameter2 without any communication) - it will improve violation: for someN = 100 received 2.13 after 5 experiments with 100000 measurements in 1000 subexperiments (see A.log, B.log). 
+
+So, this formula is enough to build distributions which will violate SHCH without real-time communication.
        
 **Theoretical explanation**:
 
