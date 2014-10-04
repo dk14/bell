@@ -10,7 +10,7 @@ This is a simulation of CHSH bell's inequality violation, assuming:
 It may not correlate with practical experiments, but at least shows that it's logically possible to set up an experiment which violate SHCH with local reality assumption and without any communication between participants or particles.
 
 
- https://www.academia.edu/8631507/Hidden_parameters_may_create_additional_statistical_errors_in_bell_test_experiments
+ [How it works](https://www.academia.edu/8631507/Hidden_parameters_may_create_additional_statistical_errors_in_bell_test_experiments)
  
 ## How to use
 
