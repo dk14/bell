@@ -29,7 +29,7 @@ So, this formula is enough to build distributions which will violate SHCH withou
        
 **Theoretical explanation**:
 
-It seems that we have non-standrard mathematical expectation here. So expectation of S calculated by experiments, both real and simulated, is wrong (regardeless 1000 measurements). If we believe in law of large numbers - it should be S = 2.0 with error 2*(sqrt(2) - 1) for such distributions.       
+It seems that we have non-standrard mathematical expectation here. So expectation of S calculated in experiments, both real and simulated, is wrong (regardeless 1000 measurements). If we believe in law of large numbers - it should be S = 2.0 with error 2*(sqrt(2) - 1) for such distributions.       
        
 ## How to use
 
