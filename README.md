@@ -10,6 +10,21 @@ It may not correlate with practical experiments, but at least shows that it's lo
 
 Note, that there is also no communication between concrete particles of same detector.
 
+## How it works:
+
+ The measured state of particle is calculated using boolean formula:
+ 
+     out = special and (not hiddenParameter1) or (not special) and hiddenParameter1,
+     special = isB' and hiddenParameter2
+ 
+ where 
+ 
+       isB' - true only if B' (67.5°) is measuring now,
+       hiddenParameter1 - random (true or false) correlated with entangled particle,
+       hiddenParameter2 - single random (true or false)
+       
+       
+
 ## How to use
 
 Actions:
@@ -51,20 +66,6 @@ Commands:
     # you can also simulate man-in-the-middle by using different entanglement file for measureB (cause measuring leads to corruption)
     # statistic will be much different and always <= 2 
 
-## How it works:
-
- The measured state of particle is calculated using boolean formula:
- 
-     out = special and (not hiddenParameter1) or (not special) and hiddenParameter1,
-     special = isB' and hiddenParameter2
- 
- where 
- 
-       isB' - true only if B' (67.5°) is measuring now,
-       hiddenParameter1 - random (true or false) correlated with entangled particle,
-       hiddenParameter2 - single random (true or false)
-       
-       
 
 ## Results:
 
