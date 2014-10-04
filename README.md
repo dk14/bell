@@ -24,6 +24,10 @@ Note, that there is also no communication between concrete particles of same det
        hiddenParameter2 - single random (true or false)
        
        
+**Theoretical explanation**:
+
+It seems that we have non-standrard mathematical expectation here. So expectation of S calculated by experiments (both real and simulated) is wrong. If we believe in law of large numbers - it should be S = 2.0 with error 2*(sqrt(2) - 1) for such distributions.       
+       
 ## How to use
 
 Actions:
@@ -70,11 +74,6 @@ Commands:
 
 - usually received S about 1.5..2.5 for randomly generated settings and statistically significant number of measurements (1000 for each S); so it violates inequality sometimes, which is enough for "always <= 2" formulation
 - increasing number of measurements make it harder but still possible to receive violations; so even such dynamic S is a legal mathematical expectation of current experiment, despite the fact that high order expectation for S itself seems to be 2.
-
-
-**Theoretical explanation**:
-
-It seems that we have non-standrard mathematical expectation here. So expectation of S calculated by experiments (both real and simulated) is wrong. If we believe in law of large numbers - it should be S = 2.0 with error 2*(sqrt(2) - 1) for such distributions.
 
 
 Pros:
