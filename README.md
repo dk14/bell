@@ -9,28 +9,9 @@ This is a simulation of CHSH bell's inequality violation, assuming:
 
 It may not correlate with practical experiments, but at least shows that it's logically possible to set up an experiment which violate SHCH with local reality assumption and without any communication between participants or particles.
 
-Note, that there is also no communication between concrete particles of same detector.
 
-## How it works:
-
- The measured state of single particle is calculated using boolean formula:
+ https://www.academia.edu/8631507/Hidden_parameters_may_create_additional_statistical_errors_in_bell_test_experiments
  
-     x = (b' and z) XOR y
- 
- where 
- 
-       b' - true only if b' (67.5°) is measuring now,
-       y - random boolean correlated with entangled particle's y at the entanglement moment,
-       z - single random boolean; it may be "50%" or another distribution
-       x - result of measurement
-       
-y  is simulated as random, based on (seqNumber div someN) to locally and implicitly correlate it for particles on same detector (particles with near seqNumbers will have same hiddenParameter2 without any communication) - it will improve violation: for someN = 100 received 2.13 after 5 experiments with 100000 measurements in 1000 subexperiments (see A.log, B.log). 
-
-       
-**Theoretical explanation**:
-
-It seems that we have non-standrard mathematical expectation here. So expectation of S calculated in experiments, both real and simulated, is wrong (regardeless 1000 measurements). If we believe in law of large numbers - it should be S = 2.0 with error 2*(sqrt(2) - 1) for such distributions.       
-       
 ## How to use
 
 Actions:
@@ -72,27 +53,6 @@ Commands:
     # you can also simulate man-in-the-middle by using different entanglement file for measureB (cause measuring leads to corruption)
     # statistic will be much different and always <= 2 
 
-
-## Results:
-
-- usually received S about 1.5..2.5 for randomly generated settings and statistically significant number of measurements (1000 for each S); so it violates inequality sometimes, which is enough for "always <= 2" formulation
-- increasing number of measurements make it harder but still possible to receive violations; so even such dynamic S is a legal mathematical expectation of current experiment, despite the fact that high order expectation for S itself seems to be 2.
-
-
-Pros:
-
-- it's simpler than "spooky correlation" and fine with no-communication theorem
-- it solves relativity of simultaneity paradox and allow deterministic hidden parameters, so should be fine with special relativity theory
-- it seems to be fine with existing quantum predictions (S < 2*sqrt(2), sometimes up to 2.6)
-
-Cons:
-
-- didn't try to model quantum teleportation - it seems to be possible (assuming non-communication principle)
-- results may not correlate with real experiment
-
-How to disprove:
-
-- may be partially disproven by real experiment - just greater value of setting switching frequency should be used - it should a little bit decrease the experimental maximum of S. On the other hand, it seems that particle strategy may be improved to compensate it.  
 
 Links: 
 
