@@ -73,16 +73,15 @@ object Launcher extends App {
   def readEntanglement(filename: String) = Source.fromFile(new File(filename)).getLines().toList.head.map(_.toString).toList
   def printEntanglement(e: Entanglement) = println(e.g.map(_.int).mkString(""))
 
-  val switches = 100
 
   args.toList match {
     case "entangle" :: count :: Nil => printEntanglement(Entanglement(generate(count.toInt)))
     case "measureA" :: entanglementFile :: count :: "random" :: Nil =>
-      measure(true, generate(switches).flatMap(List.fill(count.toInt / switches + 1)(_)).take(count.toInt).toList.map(_.int.toString), readEntanglement(entanglementFile))
+      measure(true, generate(count.toInt).toList.map(_.int.toString), readEntanglement(entanglementFile))
     case "measureA" :: entanglementFile :: groupSize :: measurerStates :: Nil =>
       measure(true, measurerStates.toList.map(_.toString).flatMap(List.fill(groupSize.toInt)(_)), readEntanglement(entanglementFile))
     case "measureB" ::  entanglementFile :: count :: "random" ::  Nil =>
-      measure(false, generate(switches).flatMap(List.fill(count.toInt / switches + 1)(_)).take(count.toInt).toList.map(_.int.toString), readEntanglement(entanglementFile))
+      measure(false, generate(count.toInt).toList.map(_.int.toString), readEntanglement(entanglementFile))
     case "measureB" :: entanglementFile :: groupSize :: measurerStates :: Nil => //TODO add groupSize
       measure(false, measurerStates.toList.map(_.toString).flatMap(List.fill(groupSize.toInt)(_)), readEntanglement(entanglementFile))
     case "analize" :: aName :: bName :: Nil => println("S = " + analize(readStatistics(aName), readStatistics(bName)))
