@@ -26,6 +26,8 @@ http://en.wikipedia.org/wiki/CHSH_inequality
  
 ## How to use
 
+This section describes how to run simulator if you're too lazy to play the game manually.
+
 Actions:
 
 1. Generating e.txt file with hidden parameters (you can make it read-only to ensure there is no tricks)
