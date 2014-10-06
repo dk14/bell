@@ -13,11 +13,11 @@ It may not correlate with practical experiments, but at least shows that it's lo
 "I want to play a game..."(c) Billy The Puppet 
 
 1. Just pick up some statistically significant N (like 100 or 1000). 
-2. Randomly choose detector setting (a/a', b/b') and some hidden parameter (H) for every sub-experiment. So you will have an array of detector settings, like A = 0010011101110... , B= 101101110110101... and array of hidden parameters, like H=01110110101100... 
+2. Randomly choose detector setting (a/a', b/b') and some hidden parameter (H) for every sub-experiment (i.e. unique measurement). Encode detector setting as binary a->0, a'->1, b->0, b'->1. So you will have an array of detector settings, like A = 0010011101110... , B= 101101110110101... and array of hidden parameters, like H=01110110101100... 
 3. Now you can built measurement statistic with simple rules: 
 
 - at the detector A - you should always repeat hidden parameter M(i) = H(i), regardless which setting was used -  a or a' 
-- at the detector B result of measurement should be calculated as hidden parameter AND type of measurement (1 for b', 0 - for b): M(i) = H(i) & !B(i), where M denoted as measurement.
+- at the detector B result of measurement should be calculated as hidden parameter AND NOT B(i) from B array: M(i) = H(i) & B(i), where M denoted as measurement.
  
 Calculate [S](http://en.wikipedia.org/wiki/CHSH_inequality) based on this statistic. You will receive S > 2  about every second(!) such experiment. So CHSH will be violated without any non-local magic!
 
