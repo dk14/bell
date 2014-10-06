@@ -13,7 +13,7 @@ Please refer to [this publication](https://www.academia.edu/8631507/Hidden_param
  
 ## Game rules
 
-It's an interesting game :). 
+I want to play a game... :). 
 
 1. Just pick up some statistically significant N (like 100 or 1000). 
 2. Randomly choose detector setting (a/a', b/b') and some hidden parameter (H) for every sub-experiment. So you will have an array of detector settings, like A = 0010011101110... , B= 101101110110101... and array of shared hidden parameters, like H=01110110101100... 
