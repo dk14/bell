@@ -19,7 +19,7 @@ It may not correlate with practical experiments, but at least shows that it's lo
 - at the detector A - you should always repeat hidden parameter M(i) = H(i), regardless which setting was used -  a or a' 
 - at the detector B result of measurement should be calculated as hidden parameter AND type of measurement (1 for b', 0 - for b): M(i) = H(i) & !B(i), where M denoted as measurement.
  
-Calculate [S](http://en.wikipedia.org/wiki/CHSH_inequality) based on this statistic. You will receive S > 2  about every second(!) such experiment...even considering [sigma criterion](http://en.wikipedia.org/wiki/Statistical_significance). So CHSH will be violated without any non-local magic!
+Calculate [S](http://en.wikipedia.org/wiki/CHSH_inequality) based on this statistic. You will receive S > 2  about every second(!) such experiment. So CHSH will be violated without any non-local magic!
 
 
 ## How to use
