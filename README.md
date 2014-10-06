@@ -24,10 +24,7 @@ It's an interesting game :).
  
 Calculate [S](http://en.wikipedia.org/wiki/CHSH_inequality) based on this statistic. You will receive S > 2  about every second(!) such experiment...even considering [sigma criterion](http://en.wikipedia.org/wiki/Statistical_significance). So CHSH will be violated without any non-local magic!
 
-http://en.wikipedia.org/wiki/CHSH_inequality
 
- 
- 
 ## How to use
 
 This section describes how to run simulator if you're too lazy to play the game manually.
