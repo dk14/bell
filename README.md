@@ -12,6 +12,18 @@ It may not correlate with practical experiments, but at least shows that it's lo
 
 Please refer to [this publication](https://www.academia.edu/8631507/Hidden_parameters_may_create_additional_statistical_errors_in_bell_test_experiments) for theoretical explanation of proposed model.
  
+## Game rules
+
+It's an interesting game :). Just pick up some statistically significant N (like 100 or 1000). Choose detector setting (a/a', b/b') and some hidden parameter (H) randomly for every sub-experiment. As a result you will have array of detector settings, like A = 0010011101110... , B= 101101110110101... and array of shared hidden parameters, like H=01110110101100... So now you can built measurement statistic with simple rules: 
+- at the detector A - you should always repeat hidden parameter M(A) = H, regardless which setting was used -  a or a' 
+- at the detector B result of measurement is calculated as hidden parameter AND type of measurement (1 for b', 0 - for b): M(B) = H & B', where M denoted as measurement.
+ 
+So now you may calculate [S](http://en.wikipedia.org/wiki/CHSH_inequality) based on statistic. You will receive S > 2  about every second(!) such experiment...even considering [sigma criterion](http://en.wikipedia.org/wiki/Statistical_significance). So you will violate CHSH without any non-local magic!
+
+http://en.wikipedia.org/wiki/CHSH_inequality
+
+ 
+ 
 ## How to use
 
 Actions:
