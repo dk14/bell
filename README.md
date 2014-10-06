@@ -3,10 +3,9 @@
 This is a simulation of CHSH bell's inequality violation, assuming:
 
 - local realism, determinism - entangled particles are sharing some hidden parameter
-- simultaneity is just a special case - it's possible to violate CHSH using sequence numbers instead of timetags
 - particle knows about local measurement
 
-It may not correlate with practical experiments, but at least shows that it's logically possible to set up an experiment which violate SHCH with local reality assumption and without any communication between participants or particles.
+It may not correlate with practical experiments, but at least shows that it's logically possible to set up an experiment which violate SHCH (sometimes) with local reality assumption and without any communication between participants or particles.
  
 ## Game rules
 
