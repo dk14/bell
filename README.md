@@ -43,7 +43,7 @@ Calculate [S](http://en.wikipedia.org/wiki/CHSH_inequality) based on this statis
       A_B = (size(find(A_BQC== 0))(2) - size(find(A_BQC != 0)))(2)/ size(A_BQC)(2);
       A_B_QC = (A(PLAN == 3) - B(PLAN == 3));
       A_B_ = (size(find(A_B_QC== 0))(2) - size(find(A_B_QC != 0))(2)) / size(A_B_QC)(2);
-      S = AB - AB_ + A_B + A_B_ # calculate S
+      S = AB - AB_ + A_B + A_B_; # calculate S
     end
     S(100)
 \* checked with GNU Octave
