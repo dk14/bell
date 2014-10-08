@@ -16,7 +16,7 @@ It's not correlating with practical experiments, but at least shows that it's lo
 3. Now you can built measurement statistic with simple rules: 
 
 - at the detector A - you should always repeat hidden parameter, regardless which setting was used -  a or a' 
-- at the detector B - hidden parameter is repeated only for B=0 setting. If B=1 (b') - you may choose strategy (use only one in same experiment):
+- at the detector B - hidden parameter is repeated only for B=0 setting. If B=1 (b') - you may choose strategy (use only one in same statistic):
   - always return 0
   - always return 1
   - randomly return hidden parameter or inverted value of hidden parameter
