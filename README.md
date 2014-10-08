@@ -25,7 +25,7 @@ Calculate [S](http://en.wikipedia.org/wiki/CHSH_inequality) based on this statis
 
 ## MatLab simulation
 
-    function bell = S(n)
+    function S = S(n)
       AA_ = arrayfun(@(x) round(rand), 1:n); # randomly choose detector setting a or a’ (0 or 1 respectively)
       BB_ = arrayfun(@(x) round(rand), 1:n); # randomly choose detector setting b or b’ (0 or 1 respectively)
       notbb = arrayfun(@(x) mod(x + 1, 2), BB_); # invert BB_
@@ -46,6 +46,10 @@ Calculate [S](http://en.wikipedia.org/wiki/CHSH_inequality) based on this statis
       S = AB - AB_ + A_B + A_B_; # calculate S
     end
     S(100)
+    
+    #graphics
+    X = @arrayfun(@S,meshgrid([1:15].*100))
+    surf(X)
 \* checked with GNU Octave
 
 ## Scala simulation
