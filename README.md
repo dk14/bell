@@ -32,8 +32,7 @@ Calculate [S](http://en.wikipedia.org/wiki/CHSH_inequality) based on received st
       H = arrayfun(@(x) round(rand), 1:n); #randomly choose hidden parameter (0 or 1)
       A = H; #A always correlate with hidden parameter
       H2 =  arrayfun(@(x) round(rand), 1:n).*notbb; # second hidden parameter
-      B = abs(H.-H2); # xor
-      #alternative - B = H.*BB_;
+      B = abs(H.-H2); # it's just XOR, alternative one-parameter based option - B = H.*BB_
       PLAN = AA_.+(notbb.*2);
       ABQC = (A(PLAN == 0) - B(PLAN == 0)); # choose only AB combos
       AB = (size(find(ABQC == 0))(2) - size(find(ABQC != 0))(2)) / size(ABQC)(2); #calculate E(AB)
