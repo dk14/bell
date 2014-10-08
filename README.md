@@ -42,7 +42,7 @@ Calculate [S](http://en.wikipedia.org/wiki/CHSH_inequality) based on this statis
     A_B_ = (size(find(A_B_QC== 0))(2) - size(find(A_B_QC != 0))(2)) / size(A_B_QC)(2);
     S = AB - AB_ + A_B + A_B_ # calculate S
     
-\* Checked in GNU Octave
+\* checked in GNU Octave
 
 ## Scala simulation
 
