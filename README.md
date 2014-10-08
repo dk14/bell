@@ -21,7 +21,7 @@ It's not correlating with practical experiments, but at least shows that it's lo
   - always return 1
   - randomly return hidden parameter or inverted value of hidden parameter
  
-Calculate [S](http://en.wikipedia.org/wiki/CHSH_inequality) based on this statistic. You will receive S > 2  with 50% probabilty. So CHSH will be violated without any non-local magic!
+Calculate [S](http://en.wikipedia.org/wiki/CHSH_inequality) based on this statistic. You will receive S > 2  with 50% probability. So CHSH will be violated without any non-local magic!
 
 ## MatLab simulation
 
