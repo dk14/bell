@@ -5,7 +5,7 @@ This is a simulation of CHSH bell's inequality violation, assuming:
 - local realism, determinism - entangled particles are sharing some hidden parameter
 - particle knows about local measurement
 
-It may not correlate with practical experiments, but at least shows that it's logically possible to set up an experiment which violate SHCH (sometimes) with local reality assumption and without any communication between participants or particles.
+It's not correlate with practical experiments, but at least shows that it's logically possible to set up an experiment which violate SHCH (sometimes) with local reality assumption and without any communication between participants or particles.
  
 ## Game rules
 
@@ -15,8 +15,11 @@ It may not correlate with practical experiments, but at least shows that it's lo
 2. Randomly choose detector setting (a/a', b/b') and some hidden parameter (H) for every sub-experiment (i.e. unique measurement). Encode detector setting as binary a->0, a'->1, b->0, b'->1. So you will have an array of detector settings, like A = 0010011101110... , B= 101101110110101... and array of hidden parameters, like H=01110110101100... 
 3. Now you can built measurement statistic with simple rules: 
 
-- at the detector A - you should always repeat hidden parameter M(i) = H(i), regardless which setting was used -  a or a' 
-- at the detector B result of measurement should be calculated as hidden parameter AND NOT B(i) from B array: M(i) = H(i) & B(i), where M denoted as measurement.
+- at the detector A - you should always repeat hidden parameter, regardless which setting was used -  a or a' 
+- at the detector B - hidden parameter is repeated only for B=0 setting. If B=1 (b') - you may choose strategy:
+  - always return 0
+  - always return 1
+  - randomly return hidden parameter or inverted value of hidden parameter
  
 Calculate [S](http://en.wikipedia.org/wiki/CHSH_inequality) based on this statistic. You will receive S > 2  about every second(!) such experiment. So CHSH will be violated without any non-local magic!
 
