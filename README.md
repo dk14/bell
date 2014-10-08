@@ -20,10 +20,33 @@ It may not correlate with practical experiments, but at least shows that it's lo
  
 Calculate [S](http://en.wikipedia.org/wiki/CHSH_inequality) based on this statistic. You will receive S > 2  about every second(!) such experiment. So CHSH will be violated without any non-local magic!
 
+## MatLab simulation
 
-## How to use
+    n = 100
+    AA_ = arrayfun(@(x) round(rand), 1:n); # randomly choose detector setting a or a’ (0 or 1 respectively)
+    BB_ = arrayfun(@(x) round(rand), 1:n); # randomly choose detector setting b or b’ (0 or 1 respectively)
+    notbb = arrayfun(@(x) mod(x + 1, 2), BB_) # invert BB_
+    H = arrayfun(@(x) round(rand), 1:n); #randomly choose hidden parameter (0 or 1)
+    A = H; #A always correlate with hidden parameter
+    H2 =  arrayfun(@(x) round(rand), 1:n).*notbb; # second hidden parameter
+    B = abs(H.-H2); # xor
+    #alternative - B = H.*BB_
+    PLAN = AA_.+(notbb.*2);
+    ABQC = (A(PLAN == 0) - B(PLAN == 0)); # choose only AB combos
+    AB = (size(find(ABQC == 0))(2) - size(find(ABQC != 0))(2)) / size(ABQC)(2) #calculate E(AB)
+    AB_QC = (A(PLAN == 2) - B(PLAN == 2));
+    AB_ = (size(find(AB_QC== 0))(2) - size(find(AB_QC != 0))(2)) / size(AB_QC)(2);
+    A_BQC = (A(PLAN == 1) - B(PLAN == 1));
+    A_B = (size(find(A_BQC== 0))(2) - size(find(A_BQC != 0)))(2)/ size(A_BQC)(2);
+    A_B_QC = (A(PLAN == 3) - B(PLAN == 3));
+    A_B_ = (size(find(A_B_QC== 0))(2) - size(find(A_B_QC != 0))(2)) / size(A_B_QC)(2);
+    S = AB - AB_ + A_B + A_B_ # calculate S
+    
+\* Checked in GNU Octave
 
-This section describes how to run simulator if you're too lazy to play the game manually.
+## Scala simulation
+
+This section describes how to run simulator
 
 Actions:
 
