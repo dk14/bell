@@ -1,0 +1,117 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{newunicodechar}
+\usepackage{hyperref}
+\newunicodechar{°}{\degree}
+\usepackage[T1,T2A]{fontenc}
+
+\title{Hidden parameters may create additional statistical errors in Bell test experiments}
+
+\author{Dk14}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+
+
+
+\section{Introduction}
+
+This paper describes the custom distribution of measured particle state, which may "pretend" to be violating CHSH bell's inequality in particular test. This violation was achieved by using local hidden parameter, which state was combined with information about local collapse ($a$/$a'$ or $b$/$b'$) to calculate the measurement result. This distribution is based on ideal particles and detectors assumption.
+
+\section{Model}
+\label{sec:examples}
+
+
+Let's assume that each particle has local hidden parameters $y$ and $z$. Parameters inside particles do not communicate with other side, but $y$ had  synchronized between particles at the entanglement moment. Measured state of every particle is described by boolean equation (1).
+
+\begin{equation}
+x = (b' \land z) \oplus y
+\end{equation}
+where:
+
+    $x$ - measured state of particle
+  
+    $b'$ - true only when $b'$-setting (like 67.5) is used for measuring,
+    
+    $y$ - random boolean correlated with entangled particle's z at the entanglement moment
+    
+    $z$ - single random boolean; it may be "50\%" or another distribution or even z = y
+    
+\hspace{0pt} 
+
+This equation may be simplified assuming z = y:
+\begin{equation}
+x = b' \lor z
+\end{equation}
+\hspace{0pt}        
+
+Finally, we may calculate S based on such distribution:
+
+\begin{equation}
+S = E(a, b) - E(a, b') + E(a', b) + E(a', b')
+\end{equation}
+where E is calculated as expected value of quantum correlation between $x (a$ or $a'$ respectively$)$ and $x(b$ or $b'$ respectively$)$
+
+
+\section{Analysis}
+\subsection{Simulation results}
+
+Calculation of S \textit{from independently modeled $a$ and $b$ particles} sometimes give $S > 2$, which violates CHSH. For example, it was possible to receive about 2.16 for 5 experiments and 1000 sub-experiments in each. Expectation of $S$ \textbf{itself}  still approaches to $2.0$, so such distribution is not violating bell's inequality. But practical results makes it look like, because their expectations are floating. This possible deviation is usually ignored when calculating \textit{ideal experimental} expectation as S $\pm$ $5\sigma$ with current statistical methods. Note, that hidden parameter may be fully known from both detectors together, so there is no information loss. Also note, that phase was randomly changed for evey photon
+
+
+
+
+\subsection {Standard deviation of S iself}. The $ab$ and $a'b$ correlations are constant: $E(ab)=E(a'b)=1$. The error $\pm5\sigma$ apply for $E(ab')$ and different $\pm5\sigma$ for $E(a'b')$, beacuse the result is random from 0..1. So sometimes these two sigmas compensate each other ($S \le 2$) - sometimes they're not ($S > 2$). Every sigma is calculated using count of measurements in one sub-experiment - $N/4$.
+
+
+
+
+\subsection {Explanation}
+
+Require $S \le 2$ is the similar as require percent of heads to be always $\le 1/2 $ when flipping a coin. It should be always $1/2$ in theory, but obviously not in practice. Even 100 000 repetitions of coin flipping won't guarantee you $\le$ 50000 heads. Most or results will be 50000 $\pm$ 800 ($5\sigma$). 
+
+Returning to the S, 100000 repetitions is enough to receive pretty much strong value of each $E(a/a', b/b')$. The error for correlation measurement will be about $\pm$ 0.015. This error may be produced by particle its own - for example, constant value on B' \textit{(when $x = b' \lor z$)} will give random value of correlation from 0..1. We have 2 E's (ab', a'b') affected by such error, so aggregated error is $5\sigma = 2* 0.015 = 0.032$. In other words $S \le 2 \pm 0.032$ for N = 100000. 
+
+\hspace{0pt}
+
+
+\section {Conclusion}
+
+As a result, it's possible to conclude that such disjuncted distributions may affect even real Bell test experiments and cause observed S deviation. Classical systems can't produce such deviations because they know nothing about measurement.
+
+This approach produces a whole class of models with variated z and logical operation. Such models may be:
+\begin{itemize}
+\item simpler than non-local "spooky correlation" and fine with no-communication theorem
+\item solving relativity of simultaneity paradox and allow deterministic hidden parameters, so should correlate well with special relativity theory
+\item correlating well with existing quantum predictions
+\end{itemize}
+
+\hspace{0pt}
+\hspace{0pt}
+
+\url{http://plato.stanford.edu/entries/bell-theorem/}
+
+\url{http://en.wikipedia.org/wiki/Loopholes_in_Bell_test_experiments}
+
+\url{http://en.wikipedia.org/wiki/CHSH_inequality}
+
+\url{http://en.wikipedia.org/wiki/Fr%C3%A9chet_inequalities}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
