@@ -5,7 +5,7 @@ This is a simulation of [CHSH](http://en.wikipedia.org/wiki/CHSH_inequality) bel
 - local realism, determinism - entangled particles are sharing some hidden parameter
 - particle knows about local measurement
 - no [loopholes](http://en.wikipedia.org/wiki/Loopholes_in_Bell_test_experiments) in detectors
-- using simple "50%" gaussian distribution instead of wave functions (they're just special case).
+- using simple "50%" gaussian distribution instead of wave functions (they're just special case of gaussian).
 
 It's not correlating with practical experiments (they've not solved practical [loopholes](http://en.wikipedia.org/wiki/Loopholes_in_Bell_test_experiments) yet), but at least shows that it's logically possible to set up an ideal experiment which sometimes violate CHSH with local reality assumption and without any communication between participants or particles.
 
