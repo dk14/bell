@@ -1,11 +1,12 @@
 #Bell's game
 
-This is a simulation of CHSH bell's inequality violation, assuming:
+This is a simulation of [CHSH](http://en.wikipedia.org/wiki/CHSH_inequality) bell's inequality violation, assuming:
 
 - local realism, determinism - entangled particles are sharing some hidden parameter
 - particle knows about local measurement
+- ideal detectors - no [loopholes](http://en.wikipedia.org/wiki/Loopholes_in_Bell_test_experiments)
 
-It's not correlating with practical experiments, but at least shows that it's logically possible to set up an experiment which sometimes violate SHCH with local reality assumption and without any communication between participants or particles.
+It's not correlating with practical experiments (they've not solved practical loopholes yet), but at least shows that it's logically possible to set up an experiment which sometimes violate SHCH with local reality assumption and without any communication between participants or particles.
 
 See [artcle](https://www.writelatex.com/read/sszqhnwsxydt) or [Q&A](http://physics.stackexchange.com/questions/138691/is-it-enough-to-use-only-sigma-criterion-to-calculate-expected-value-for-ideal-b) for theoretical explanation.
  
